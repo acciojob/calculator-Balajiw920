@@ -8,57 +8,17 @@
     <title>calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+	<div class="calculator">
+		<input type="text" id="input" value="0" disabled>
+		<button class="operator" id="plus">+</button>
+		<button class="operator" id="minus">-</button>
+		<button class="operator" id="multiply">*</button>
+		<button class="operator" id="divide">/</button>
+		<button class="number" id="block7">7</button>
+		<button class="number" id="block8">8</button>
+		<button
 
-    <div class="container">
-        <div class="calculator">
-            <form>
-
-                <div class="display">
-                    <input type="text" name="display" id="input">
-                </div>
-                <div>
-
-                    <input type="button" value="AC" onclick="display.value = ' '" class="oprator  mad" id="clr">
-
-                    <input type="button" value="DE" onclick="display.value = display.value.tostring().slice(0 -1)"
-                        class="oprator  mad" id="delete">
-
-                    <input type="button" value="." onclick="display.value += '.' " class="oprator  mad" id="dot">
-                    <input type="button" value="/" onclick="display.value += '/' " class="oprator  mad" id="divide">
-                </div>
-                <div>
-
-                    <input type="button" value="7" onclick="display.value += '7' " class="mad" id="block7">
-                    <input type="button" value="8" onclick="display.value += '8' "  class="mad" id="block8">
-                    <input type="button" value="9" onclick="display.value += '9' "  class="mad" id="block9">
-                    <input type="button" value="*" onclick="display.value += '*' " class="oprator  mad" id="multiply">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="display.value += '4' "  class="mad" id="block4" >
-                    <input type="button" value="5" onclick="display.value += '5' "  class="mad" id="block5">
-                    <input type="button" value="6" onclick="display.value += '6' "  class="mad"  id="block6">
-                    <input type="button" value="-" onclick="display.value += '-' " class="oprator  mad" id="minus">
-                </div>
-                <div>
-
-                    <input type="button" value="1" onclick="display.value += '1' "  class="mad"  id="block1">
-                    <input type="button" value="2" onclick="display.value += '2' "  class="mad" id="block2">
-                    <input type="button" value="3" onclick="display.value += '3' "  class="mad" id="block3">
-                    <input type="button" value="+" onclick="display.value += '+' " class="oprator mad" id="plus">
-                </div>
-                
-                <div>
-
-                    <input type="button" value="00" onclick="display.value += '00' " class="sad mad" id="block00">
-                    <input type="button" value="0" onclick="display.value += '0' " class="sad  mad" id="block0">
-                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal sad  mad" id="ans"> 
-
-                </div>
-            </form>
-        </div>
-    </div>
 </body>
 
 
